@@ -122,6 +122,7 @@ class PlayState extends MusicBeatState
 	
 	public static var autoplayMode:Bool = false;
 	public static var autoPlayOn:Bool = false;
+	public static var openedChartingMode:Bool = false;
 	public static var HAH:Bool = false; //named it hah because "HAH! YOU MISSED! HAHAHAHAHAHAAHAHAHAHAHA"
 
 	public var camDisplaceX:Float = 0;
@@ -1770,7 +1771,7 @@ class PlayState extends MusicBeatState
 		songMusic.volume = 0;
 		vocals.volume = 0;
 		
-		if (!autoPlayOn)
+		if (!autoPlayOn && !openedChartingMode)
 		{
 			if (storyDifficulty == 2 && misses == 0)
 			{

@@ -614,6 +614,7 @@ class OriginalChartingState extends MusicBeatState
 			lastSection = curSection;
 
 			PlayState.SONG = _song;
+			PlayState.openedChartingMode = true;
 			songMusic.stop();
 			vocals.stop();
 			Main.switchState(this, new PlayState());

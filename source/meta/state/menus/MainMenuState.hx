@@ -136,7 +136,7 @@ class MainMenuState extends MusicBeatState
 		add(promoChars);
 		
 		// from the base game lol
-		versionShit = new FlxText(35, FlxG.height - 50, 0, "FF v1.0.0", 12);
+		versionShit = new FlxText(35, FlxG.height - 50, 0, "FF v1.0.1", 12);
 		versionShit.color = FlxColor.WHITE;
 		versionShit.borderStyle = FlxTextBorderStyle.OUTLINE;
 		versionShit.borderColor = FlxColor.BLACK;
